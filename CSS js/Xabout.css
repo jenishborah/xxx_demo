@@ -1,0 +1,102 @@
+
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+body{
+	padding: 0;
+	margin: 0;
+	background-color: #f1f1f1;
+font-family: "open sans" sans-serif;
+
+
+
+	
+}
+.s-m{
+	position: absolute;
+	bottom: 1%;
+	left: 43%;
+	transform:translateY(-50%);
+text-align: center;
+
+}
+.btn{
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	background: #f1f1f1;
+	margin: 10px;
+	border-radius: 30%;
+	box-shadow: 0 5px 15px -5px #00000070;
+	color: #4caf50;
+	overflow: hidden;
+	position: relative;
+	
+}
+.btn i{
+	line-height: 70px;
+	font-size: 26px;
+	transition: 0.1s linear;
+	
+}
+.btn:hover i{
+	transform: scale(1.3);
+	color: #f1f1f1;
+	
+	
+}
+.btn::before{
+	content: " ";
+	position: absolute;
+	width: 120%;
+	height: 120%;
+	background: #4caf50;
+	transform: rotate(45deg);
+	left: -110%;
+	top: 90%;
+	
+}
+.btn:hover::before{
+	animation: aaa 0.7s 1;
+	top: -10%;
+	left: -10%;
+}
+@keyframes aaa{
+	0%{
+		left: -110%;
+	top: 90%;
+	}
+	50%{
+		left: 10%;
+	top: -30%;
+	}
+	100%{
+	left: -10%;
+	top: -10%;	
+	}
+}
+
+
+
+
+
+
+
+
+.about-section{
+	width: 100%;
+	
+	
+	padding: 40px 0;
+}
+.about-section{
+	text-align: center;
+}
+.border{
+	width: 100px;
+	height: 3px;
+	background: #4caf50;
+	margin: 40px auto;
+}
+.about{
+	font-size: 20px;
+
+}
